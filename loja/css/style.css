@@ -1,0 +1,202 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu principal */
+.menu, .submenu, .subsubmenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Para telas pequenas */
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #555;
+}
+
+/* Submenu */
+.submenu, .subsubmenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  min-width: 200px; /* Largura mínima para submenus */
+}
+
+.subsubmenu {
+  left: 100%;
+  top: 0;
+}
+
+/* Mostrar submenu ao passar o mouse */
+.menu li:hover > .submenu,
+.submenu li:hover > .subsubmenu {
+  display: block;
+}
+
+/* Menu responsivo */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .submenu, .subsubmenu {
+    position: static;
+    display: none;
+    background-color: #555;
+  }
+
+  .menu li:hover > .submenu,
+  .submenu li:hover > .subsubmenu {
+    display: block;
+  }
+}
+
+/* Estilos do cabeçalho */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header .search input {
+  padding: 5px;
+  width: 200px;
+}
+
+header .search button {
+  padding: 5px 10px;
+}
+
+header .user-options a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Estilos da introdução */
+.introducao {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.introducao h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.introducao p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* Estilos do banner */
+.banner .carousel img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos dos produtos */
+.produtos-destaque, .produtos-mais-vendidos {
+  padding: 20px;
+  text-align: center;
+}
+
+.produtos-destaque h2, .produtos-mais-vendidos h2 {
+  margin-bottom: 20px;
+}
+
+.produtos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.produto {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+}
+
+.produto h3 {
+  margin: 10px 0;
+}
+
+.produto .preco {
+  font-weight: bold;
+  color: #333;
+}
+
+.produto button {
+  padding: 10px 20px;
+  background-color: #ff5f99;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}

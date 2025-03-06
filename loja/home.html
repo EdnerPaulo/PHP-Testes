@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Produtos - Gvicentine</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Ícone do menu de hambúrguer para mobile -->
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="caminho/para/logo.png" alt="Gvicentine">
+      </div>
+      <div class="search">
+        <form action="#" method="get">
+          <input type="text" name="s" placeholder="Pesquisar">
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+      <div class="user-options">
+        <a href="#">Minha Conta</a>
+        <a href="#">Carrinho</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu de abas -->
+  <?php include 'menu.php'; ?>
+
+  <section class="introducao">
+    <div class="container">
+      <h1>Bem-vinda à Gvicentine</h1>
+      <p>
+        Em um mundo onde cada detalhe importa, a Gvicentine nasceu com uma missão: oferecer joias em prata que transcendam a simples beleza e se tornem símbolos de momentos inesquecíveis.
+      </p>
+      <p>
+        Fundada com o amor pela arte da joalheria e pela força feminina, nossa loja foi criada para atender mulheres que buscam mais do que acessórios - elas procuram uma forma de expressar sua personalidade, poder e elegância a cada look, seja no dia a dia ou em ocasiões especiais.
+      </p>
+      <p>
+        Cada peça da Gvicentine é cuidadosamente pensada, desenhada e produzida para refletir as diferentes facetas da mulher moderna: uma mulher forte, independente, sofisticada, mas também com um toque de delicadeza e sensibilidade. Nosso compromisso com a qualidade é inabalável. Utilizamos prata de alta qualidade, selecionando meticulosamente cada detalhe, desde o design até o acabamento, garantindo que cada joia não só seja linda, mas também durável.
+      </p>
+      <p>
+        Aqui, acreditamos que uma joia não é apenas um adereço, mas um reflexo da história, das conquistas e da autenticidade de quem a usa. Seja uma pulseira que marca o início de uma nova fase, um anel que simboliza o amor próprio ou um par de brincos que trazem confiança ao seu olhar, na Gvicentine encontramos formas de transformar momentos em memórias eternas.
+      </p>
+      <p>
+        Venha fazer parte dessa história. Escolha a peça que vai completar a sua jornada. Na Gvicentine, cada joia conta uma história.
+      </p>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="carousel">
+      <img src="caminho/para/banner1.jpg" alt="Banner 1">
+      <img src="caminho/para/banner2.jpg" alt="Banner 2">
+      <img src="caminho/para/banner3.jpg" alt="Banner 3">
+    </div>
+  </section>
+
+  <section class="produtos-destaque">
+    <h2>Produtos em Destaque</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="caminho/para/produto1.jpg" alt="Colar Duplo Trevo">
+        <h3>Colar Duplo Trevo</h3>
+        <p class="preco">R$ 44,67</p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <img src="caminho/para/produto2.jpg" alt="Ear Cuff Ramo Cravej.">
+        <h3>Ear Cuff Ramo Cravej.</h3>
+        <p class="preco">R$ 33,92</p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <img src="caminho/para/produto3.jpg" alt="Colar Pingt. Medalha Borboleta Vaz.">
+        <h3>Colar Pingt. Medalha Borboleta Vaz.</h3>
+        <p class="preco">R$ 33,80</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="produtos-mais-vendidos">
+    <h2>Produtos Mais Vendidos</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="caminho/para/produto4.jpg" alt="Choker Zircônias Brancas (Mod2)">
+        <h3>Choker Zircônias Brancas (Mod2)</h3>
+        <p class="preco">R$ 46,90</p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <img src="caminho/para/produto5.jpg" alt="Colar Flor “Bela e a Fera” (G)">
+        <h3>Colar Flor “Bela e a Fera” (G)</h3>
+        <p class="preco">R$ 33,95</p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <img src="caminho/para/produto6.jpg" alt="Pulseira Olho Grego Madrepérola">
+        <h3>Pulseira Olho Grego Madrepérola</h3>
+        <p class="preco">R$ 33,00</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Gvicentine. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+  <script>
+    // Função para alternar o menu em dispositivos móveis
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
