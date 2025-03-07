@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="grava.php" method="POST">
+        <h2>Cadastro de Aluno</h2>
+        <label for="nome">RA:</label>
+        <input type="number" id="ra" name="ra">
+        <br> 
+
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome">
+        <br>
+
+        <label for="nome">Periodo:</label>
+        <select name="periodo">
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+        </select>
+        <br>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+</body>
+</html>
